@@ -60,3 +60,7 @@ main {
   color: var(--primary-color);
   margin-bottom: 8px;
 }
+
+button {
+  color: 'black',
+}
