@@ -1,4 +1,5 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
+import ProductsList from './ProductsLists';
 
 export default function Home() {
     const [products, setProducts] = useState([
@@ -17,22 +18,19 @@ export default function Home() {
         {
             name: "Xiaomi 13 Ultra",
             description: "producto teste adicionado",
-            worker: "Buffet",
+            worker: "Uanela",
             id: 3,
         },
     ]);
 
+    const handleDelete = (id) => {
+        const newProducts = products.filter((product) => product.id !== id);
+        setProducts(newProducts)
+    }
+
     return (
         <div className='home'>
-            <h2>Homepage</h2>
-            {products.map(products =>
-                <div className='product-preview' key={products.id}>
-                    <h2>{products.name}</h2>
-                    <p>Adcionado por {products.worker}</p>
-                </div>
-            )}
-
-
+            <ProductsList products={products} title="Todos Produtos" handleDelete={handleDelete} />
         </div>
-    )
+    );
 }
