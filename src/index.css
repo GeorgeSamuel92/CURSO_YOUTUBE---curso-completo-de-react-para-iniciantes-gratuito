@@ -60,3 +60,37 @@ main {
   color: var(--primary-color);
   margin-bottom: 8px;
 }
+
+
+/* Estilos para o loading-notch */
+.notch-container {
+  text-align: center;
+}
+
+.loading-notch {
+  animation: spin 0.5s forwards infinite linear;
+  font-size: 1.4rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Estilos para mensagem de erro */
+.error-message {
+  background-color: #fff;
+  color: #f00;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.error-message span {
+  color: #f00;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
