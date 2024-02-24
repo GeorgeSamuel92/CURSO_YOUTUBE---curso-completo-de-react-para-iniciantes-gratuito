@@ -1,0 +1,4 @@
+// iniciar o servidor no terminal: 
+// npx json-server --watch data/db.json --port 8000
+
+se não iniciar essa pagina dara erro nas aulas 18,19 e 20
