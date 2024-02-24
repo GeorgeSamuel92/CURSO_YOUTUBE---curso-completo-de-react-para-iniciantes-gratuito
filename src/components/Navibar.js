@@ -1,10 +1,13 @@
-export default function Navibar() {
-    return <nav>
-        <h1> SideGeStock</h1>
-        <div className="link">
-            <a href="/">Home</a>
-            <a href="/create">Novo Produto</a>
-        </div>
-    </nav>
+import { Link } from "react-router-dom";
 
+export default function Navbar() {
+  return (
+    <nav className="navbar">
+      <h1>SiGeStock</h1>
+      <div>
+        <Link to="/">Home</Link>
+        <Link to="/create">Novo producto</Link>
+      </div>
+    </nav>
+  );
 }
