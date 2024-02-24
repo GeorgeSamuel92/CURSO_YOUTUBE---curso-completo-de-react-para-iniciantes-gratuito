@@ -60,3 +60,20 @@ main {
   color: var(--primary-color);
   margin-bottom: 8px;
 }
+
+
+/* Estilos para o loading-notch */
+.notch-container {
+  text-align: center;
+}
+
+.loading-notch {
+  animation: spin 0.5s forwards infinite linear;
+  font-size: 1.4rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
