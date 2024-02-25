@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
 
 export default function Create() {
   const [name, setName] = useState("");
@@ -9,6 +10,7 @@ export default function Create() {
   const [worker, setWorker] = useState("Uanela");
   const [isLoading, setIsLoading] = useState(false);
 
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const product = { name, price, description, worker };
@@ -19,7 +21,10 @@ export default function Create() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(product),
-      }).then(() => setIsLoading(false));
+      }).then(() => {
+      setIsLoading(false);
+      navigate("/")
+    })
     }, 2000);
   };
 
@@ -52,7 +57,7 @@ export default function Create() {
           <option value="Uanela">Uanela</option>
           <option value="Como">Como</option>
           <option value="Parker">Parker</option>
-          <option value="ArmisTrong">ArmisTrong</option>
+          <option value="ArmisTrong">Armstrong</option>
         </select>
         <button disabled={isLoading}>
           {isLoading ? (
