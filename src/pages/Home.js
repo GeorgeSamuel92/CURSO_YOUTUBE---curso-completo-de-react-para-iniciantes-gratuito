@@ -2,6 +2,7 @@ import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useFetch } from "../utils/useFetch.js";
 import ProductsList from "../components/ProductsLists.js";
+import ProductsDetailsSkeleton from "../components/ProductsDetailsSkeleton.js";
 
 
 export default function Home() {
@@ -16,11 +17,7 @@ export default function Home() {
                 </p>
             )}
 
-            {isLoading && (
-                <div className="notch-container">
-                    <FontAwesomeIcon icon={faCircleNotch} className="loading-notch" />
-                </div>
-            )}
+            {isLoading && <ProductsDetailsSkeleton title="Todos Productos" />}
             {products && <ProductsList products={products} title="Todos Productos" />}
         </div>
     );

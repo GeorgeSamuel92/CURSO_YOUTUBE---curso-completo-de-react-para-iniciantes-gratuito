@@ -67,23 +67,6 @@ main {
 }
 
 
-/* Estilos para o loading-notch */
-.notch-container {
-  text-align: center;
-}
-
-.loading-notch {
-  animation: spin 0.5s forwards infinite linear;
-  font-size: 1.4rem;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 /* Estilos para mensagem de erro */
 .error-message {
   background-color: #fff;
@@ -98,4 +81,58 @@ main {
   color: #f00;
   font-weight: bolder;
   font-size: 1.2rem;
+}
+
+/* Estilos para a página de detalhe de producto */
+.product-details h2 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.product-details .description {
+  margin-block: 20px;
+}
+
+.product-details-skeleton-loading h2,
+.product-details-skeleton-loading p {
+  width: 50%;
+}
+
+/* Esqueletos de carregamento */
+
+.skeleton {
+  background: linear-gradient(90deg, #f3f3f3, #6d6d6d, #f3f3f3);
+  background-size: 200%;
+  animation: skeleton 1s infinite reverse;
+  opacity: 0.7;
+}
+
+.skeleton-text {
+  height: 0.5rem;
+  width: 100%;
+  border-radius: 0.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.skeleton-text:nth-child(4n + 1) {
+  width: 98%;
+}
+
+.skeleton-text:nth-child(3n + 1) {
+  width: 95%;
+}
+
+.skeleton-text:last-child {
+  margin-bottom: 0;
+  width: 85%;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
