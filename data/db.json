@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "name": "Samsung S24 Ultra",
+      "description": "O Samsung S24 Ultra é o epítome da inovação tecnológica. Com uma tela deslumbrante de 6,5 polegadas AMOLED Super Infinity Pro, câmera quádrupla de 108MP, desempenho ultrarrápido e uma bateria de longa duração, este smartphone redefine a experiência móvel. Experimente o futuro da conectividade com 5G, design elegante e recursos de segurança avançados. O Samsung S24 Ultra é a escolha definitiva para aqueles que buscam excelência em um dispositivo móvel.",
+      "worker": "Uanela",
+      "price": 120000,
+      "id": 1
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "description": "O iPhone 15 Pro Max é o ápice da inovação da Apple. Com uma tela OLED Super Retina XDR de 6,7 polegadas, câmeras triplas de última geração, desempenho incomparável e a potência do chip A16 Bionic, este smartphone redefine a experiência Apple. Desfrute de imagens impressionantes, recursos de realidade aumentada avançados e uma bateria que dura o dia todo. O iPhone 15 Pro Max é a escolha definitiva para quem busca o melhor em tecnologia e estilo.",
+      "worker": "Jobs",
+      "price": 130000,
+      "id": 2
+    },
+    {
+      "name": "Xiaomi 13 Ultra",
+      "description": "O Xiaomi 13 Ultra é a vanguarda da tecnologia na palma da sua mão. Com uma tela AMOLED de 6,5 polegadas com resolução 2K, câmera quádrupla de 108MP, e um poderoso processador Snapdragon 8 Gen 2, este smartphone redefine o que é possível. Com suporte para redes 5G, design elegante e uma bateria de longa duração, o Xiaomi 13 Ultra proporciona uma experiência de smartphone incomparável. Descubra um mundo de possibilidades com este dispositivo inovador da Xiaomi.",
+      "worker": "Uanela",
+      "price": 90000,
+      "id": 3
+    }
+  ]
+}
