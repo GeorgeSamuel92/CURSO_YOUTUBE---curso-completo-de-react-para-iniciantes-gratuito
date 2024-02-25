@@ -1,14 +1,20 @@
 import { useState } from 'react';
 export default function Create() {
-  const [name, setName] = useState('teste');
+  const [name, setName] = useState('');
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
   const [worker, setWorker] = useState('Uanela');
 
+  const handleSubmit = (e) => {
+    e.preventDefaut();
+    const product = {name, description, price, worker};
+    console.log(product);
+  };
+
   return (
     <div className="create">
       <h2>Adicionar um Novo Producto</h2>
-      <form >
+      <form onSubmit={handleSubmit}>
         <label > Nome do Produto: </label>
         <input
           type="text"
@@ -22,8 +28,8 @@ export default function Create() {
           type="text"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-
-          required > </textarea>
+          required 
+          ></textarea>
 
         <label > Preço: </label>
         <input
@@ -41,7 +47,7 @@ export default function Create() {
           <option value="Como">Como</option>
           <option value="Parker">Parker</option>
         </select>
-        <button type="submit">Adicionar</button>
+        <button>Adicionar</button>
 
       </form>
     </div>
