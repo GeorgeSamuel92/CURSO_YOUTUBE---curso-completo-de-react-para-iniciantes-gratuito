@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useFetch } from '../utils/useFetch';
 import ProductsDetailsSkeleton from '../components/ProductsDetailsSkeleton';
+import ErrorMessage from '../components/ErrorMessage';
 
 export default function ProductDetails() {
     const { id } = useParams();
@@ -8,7 +9,7 @@ export default function ProductDetails() {
 
     return (
         <div className="product-details">
-            {isError && <p>{error.message}</p>}
+            {isError && <ErrorMessage  message={error.message} />}
             {isLoading && <ProductsDetailsSkeleton />}
             {product && (
                 <article>
