@@ -61,6 +61,11 @@ main {
   margin-bottom: 8px;
 }
 
+.product-preview a {
+
+  text-decoration: none;
+}
+
 
 /* Estilos para o loading-notch */
 .notch-container {

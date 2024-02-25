@@ -1,7 +1,8 @@
-import ProductsList from "../components/ProductsLists.js";
 import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useFetch } from "../utils/useFetch.js";
+import ProductsList from "../components/ProductsLists.js";
+
 
 export default function Home() {
     const { data: products, isError, isLoading, error, } = useFetch('http://localhost:8000/products');
