@@ -1,6 +1,7 @@
 # curso-completo-de-react-para-iniciantes-gratuito
 
 Este é o repósitorio usado para alocar os recursos usado no Curso Completo de ReactJs para Iniciantes do canal Uanela Como do YouTube.
+# ........................................................................................................................................................
 
 # Getting Started with Create React App
 
