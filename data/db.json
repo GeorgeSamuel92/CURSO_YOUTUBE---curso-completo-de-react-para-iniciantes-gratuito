@@ -34,20 +34,6 @@
       "description": "rr",
       "price": "1",
       "worker": "Uanela"
-    },
-    {
-      "id": "f780",
-      "name": "kobo",
-      "description": "h",
-      "price": "2",
-      "worker": "Parker"
-    },
-    {
-      "id": "0449",
-      "name": "kobo",
-      "description": "o",
-      "price": "2",
-      "worker": "Uanela"
     }
   ]
 }
