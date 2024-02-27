@@ -1,3 +1,6 @@
+## Curso de React disponibilizado pelo canal Uanela Como no youtube
+
+- nesse projeto veremos como construir uma aplicação em react usando as tecnologia como nodeJS e javascript para realiar a tarefa
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
